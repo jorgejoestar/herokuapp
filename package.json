@@ -7,14 +7,17 @@
     "gm": "^1.23.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-rename": "^1.4.0",
-    "gulp-watch": "^5.0.1"
+    "gulp-watch": "^5.0.1",
+    "multer": "^1.4.1",
+    "tsc": "^1.20150623.0"
   },
   "devDependencies": {
     "gulp": "^4.0.0"
   },
   "scripts": {
     "gulp-task": "gulp optimize",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
