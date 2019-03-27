@@ -19,7 +19,7 @@
   "scripts": {
     "gulp-task": "gulp optimize",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node gulpfile.js"
   },
   "author": "",
   "license": "ISC",
