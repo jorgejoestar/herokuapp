@@ -27,7 +27,20 @@ app.get('/home', function(req: express.Request, res: express.Response) {
     gm('./Images/AestheticBottle.jpg')
     .resize(300, null)
     .write('./changed/medium', upload.file.filename), function (err) {
-      if (!err) console.log(' hooray! ');
+      if (err) console.dir(' hooray! ')
+      console.log(this.filename + " created  :: " + arguments[3]);
+    }
+    gm('./Images/AestheticBottle.jpg')
+    .resize(200, null)
+    .write('./changed/small', upload.file.filename), function (err) {
+      if (err) console.dir('yuh')
+      console.log(this.filename + " created :: " + arguments[3]);
+    }
+    gm('./Images/AestheticBottle.jpg')
+    .resize(400, null)
+    .write('./changed/large', upload.file.filename), function (err) {
+      if (err) console.dir('yuhh')
+      console.log(this.filename + " created :: " + arguments[3]);
     }
     //Get File.original
     //Do stuff with gm
