@@ -17,7 +17,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage })
 
 app.get('/home', function(req: express.Request, res: express.Response) {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + './index.html');
   });
   
   app.listen(process.env.PORT || 4000, function(){
